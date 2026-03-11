@@ -1,0 +1,51 @@
+---@meta
+
+---@class ABP_Interactable_Radio_120_C : AInteractableObject
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field ArrowLookAt UArrowComponent
+---@field SenderOff USignalSenderComponent
+---@field SenderOn USignalSenderComponent
+---@field SenderFrequencySwitch USignalSenderComponent
+---@field ReceiverOff USignalReceiverComponent
+---@field ReceiverOn USignalReceiverComponent
+---@field NS_Destruct_Radio UNiagaraComponent
+---@field DamageInteractable UDamageInteractableComponent
+---@field Hittable UHittableComponent
+---@field InteractableRadioAk UAkComponent
+---@field Radio USkeletalMeshComponent
+---@field HoldOff UHoldComponent
+---@field HoldOn UHoldComponent
+---@field SingleClick USingleClickComponent
+---@field Timeline_0_NewTrack_0_90D55A284453F9ACDD209F89A16AF286 float
+---@field Timeline_0__Direction_90D55A284453F9ACDD209F89A16AF286 ETimelineDirection::Type
+---@field Timeline_0 UTimelineComponent
+---@field SFX_TurnOn UAkAudioEvent
+---@field SFX_TurnOff UAkAudioEvent
+---@field SFX_Destruct UAkAudioEvent
+---@field SFX_FrequencySwitch UAkAudioEvent
+local ABP_Interactable_Radio_120_C = {}
+
+function ABP_Interactable_Radio_120_C:TurnOffRadioInteract() end
+function ABP_Interactable_Radio_120_C:TurnOnRadioInteract() end
+function ABP_Interactable_Radio_120_C:TurnOffAllInteract() end
+function ABP_Interactable_Radio_120_C:Timeline_0__FinishedFunc() end
+function ABP_Interactable_Radio_120_C:Timeline_0__UpdateFunc() end
+---@param DataObject UObject
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_120_ReceiverOn_K2Node_ComponentBoundEvent_1_SignalReceiverComponentReceiveSignature__DelegateSignature(DataObject) end
+---@param DataObject UObject
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_120_ReceiverOff_K2Node_ComponentBoundEvent_5_SignalReceiverComponentReceiveSignature__DelegateSignature(DataObject) end
+---@param LastDamageDealerUID FUID
+---@param bProjectileFlownThroughObject boolean
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_120_DamageInteractable_K2Node_ComponentBoundEvent_6_OnDamageAccumulated__DelegateSignature(LastDamageDealerUID, bProjectileFlownThroughObject) end
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_120_SingleClick_K2Node_ComponentBoundEvent_9_InteractSignature__DelegateSignature() end
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_120_HoldOn_K2Node_ComponentBoundEvent_10_InteractSignature__DelegateSignature() end
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_120_HoldOff_K2Node_ComponentBoundEvent_11_InteractSignature__DelegateSignature() end
+function ABP_Interactable_Radio_120_C:StartFlickering() end
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_SingleClick_K2Node_ComponentBoundEvent_4_InteractSignature__DelegateSignature() end
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_HoldOff_K2Node_ComponentBoundEvent_3_InteractSignature__DelegateSignature() end
+function ABP_Interactable_Radio_120_C:BndEvt__BP_Interactable_Radio_HoldOn_K2Node_ComponentBoundEvent_2_InteractSignature__DelegateSignature() end
+function ABP_Interactable_Radio_120_C:ReceiveBeginPlay() end
+---@param EntryPoint int32
+function ABP_Interactable_Radio_120_C:ExecuteUbergraph_BP_Interactable_Radio_120(EntryPoint) end
+
+

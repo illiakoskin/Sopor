@@ -1,0 +1,175 @@
+---@meta
+
+---@class FAnimBlueprintGeneratedConstantData : FAnimBlueprintConstantData
+---@field __NameProperty_435 FName
+---@field __ArrayProperty_436 TArray<float>
+---@field __ArrayProperty_437 TArray<float>
+---@field __StructProperty_438 FInputScaleBiasClampConstants
+---@field __FloatProperty_439 float
+---@field __NameProperty_440 FName
+---@field __ArrayProperty_441 TArray<float>
+---@field __NameProperty_442 FName
+---@field __IntProperty_443 int32
+---@field __FloatProperty_444 float
+---@field __ByteProperty_445 ESequenceEvalReinit::Type
+---@field __BoolProperty_446 boolean
+---@field __EnumProperty_447 EAnimSyncMethod
+---@field __ByteProperty_448 EAnimGroupRole::Type
+---@field __NameProperty_449 FName
+---@field __NameProperty_450 FName
+---@field __IntProperty_451 int32
+---@field __ArrayProperty_452 TArray<float>
+---@field __ByteProperty_453 ERefPoseType
+---@field __BlendProfile_454 UBlendProfile
+---@field __CurveFloat_455 UCurveFloat
+---@field __BoolProperty_456 boolean
+---@field __EnumProperty_457 EAlphaBlendOption
+---@field __EnumProperty_458 EBlendListTransitionType
+---@field __ArrayProperty_459 TArray<float>
+---@field __StructProperty_460 FAnimNodeFunctionRef
+---@field AnimBlueprintExtension_PropertyAccess FAnimSubsystem_PropertyAccess
+---@field AnimBlueprintExtension_Base FAnimSubsystem_Base
+local FAnimBlueprintGeneratedConstantData = {}
+
+
+
+---@class FAnimBlueprintGeneratedMutableData : FAnimBlueprintMutableData
+---@field __BoolProperty boolean
+---@field __BoolProperty_0 boolean
+---@field __BoolProperty_1 boolean
+---@field __BoolProperty_2 boolean
+---@field __BoolProperty_3 boolean
+---@field __Object_4 UObject
+---@field __BoolProperty_5 boolean
+---@field __FloatProperty_6 float
+---@field __AnimSequenceBase_7 UAnimSequenceBase
+---@field __BoolProperty_8 boolean
+---@field __BoolProperty_9 boolean
+local FAnimBlueprintGeneratedMutableData = {}
+
+
+
+---@class UAnimBP_Player_Slots_C : UAnimInstancePlayer
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field __AnimBlueprintMutables FAnimBlueprintGeneratedMutableData
+---@field AnimBlueprintExtension_PropertyAccess FAnimSubsystemInstance
+---@field AnimBlueprintExtension_Base FAnimSubsystemInstance
+---@field AnimGraphNode_Root FAnimNode_Root
+---@field AnimGraphNode_SaveCachedPose_8 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_Slot_7 FAnimNode_Slot
+---@field AnimGraphNode_SaveCachedPose_7 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_Slot_6 FAnimNode_Slot
+---@field AnimGraphNode_LayeredBoneBlend_12 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_Slot_5 FAnimNode_Slot
+---@field AnimGraphNode_LayeredBoneBlend_11 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_Slot_4 FAnimNode_Slot
+---@field AnimGraphNode_LinkedInputPose_4 FAnimNode_LinkedInputPose
+---@field AnimGraphNode_LinkedInputPose_3 FAnimNode_LinkedInputPose
+---@field AnimGraphNode_ApplyMeshSpaceAdditive_3 FAnimNode_ApplyMeshSpaceAdditive
+---@field AnimGraphNode_ApplyAdditive_6 FAnimNode_ApplyAdditive
+---@field AnimGraphNode_BlendListByBool_7 FAnimNode_BlendListByBool
+---@field AnimGraphNode_SequencePlayer_5 FAnimNode_SequencePlayer
+---@field AnimGraphNode_IdentityPose_3 FAnimNode_RefPose
+---@field AnimGraphNode_TwoWayBlend FAnimNode_TwoWayBlend
+---@field AnimGraphNode_BlendListByBool_6 FAnimNode_BlendListByBool
+---@field AnimGraphNode_SequencePlayer_4 FAnimNode_SequencePlayer
+---@field AnimGraphNode_BlendListByBool_5 FAnimNode_BlendListByBool
+---@field AnimGraphNode_SequencePlayer_3 FAnimNode_SequencePlayer
+---@field AnimGraphNode_SequencePlayer_2 FAnimNode_SequencePlayer
+---@field AnimGraphNode_LinkedInputPose_2 FAnimNode_LinkedInputPose
+---@field AnimGraphNode_LinkedInputPose_1 FAnimNode_LinkedInputPose
+---@field AnimGraphNode_ApplyMeshSpaceAdditive_2 FAnimNode_ApplyMeshSpaceAdditive
+---@field AnimGraphNode_ApplyMeshSpaceAdditive_1 FAnimNode_ApplyMeshSpaceAdditive
+---@field AnimGraphNode_BlendBoneByChannel FAnimNode_BlendBoneByChannel
+---@field AnimGraphNode_UseCachedPose_29 FAnimNode_UseCachedPose
+---@field AnimGraphNode_SaveCachedPose_6 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_LayeredBoneBlend_10 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_SaveCachedPose_5 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_UseCachedPose_28 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_27 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_26 FAnimNode_UseCachedPose
+---@field AnimGraphNode_LayeredBoneBlend_9 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_UseCachedPose_25 FAnimNode_UseCachedPose
+---@field AnimGraphNode_SaveCachedPose_4 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_UseCachedPose_24 FAnimNode_UseCachedPose
+---@field AnimGraphNode_ApplyAdditive_5 FAnimNode_ApplyAdditive
+---@field AnimGraphNode_UseCachedPose_23 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_22 FAnimNode_UseCachedPose
+---@field AnimGraphNode_LayeredBoneBlend_8 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_ApplyAdditive_4 FAnimNode_ApplyAdditive
+---@field AnimGraphNode_UseCachedPose_21 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_20 FAnimNode_UseCachedPose
+---@field AnimGraphNode_ApplyMeshSpaceAdditive FAnimNode_ApplyMeshSpaceAdditive
+---@field AnimGraphNode_LinkedInputPose FAnimNode_LinkedInputPose
+---@field AnimGraphNode_LayeredBoneBlend_7 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_LayeredBoneBlend_6 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_Slot_3 FAnimNode_Slot
+---@field AnimGraphNode_Slot_2 FAnimNode_Slot
+---@field AnimGraphNode_UseCachedPose_19 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_18 FAnimNode_UseCachedPose
+---@field AnimGraphNode_LayeredBoneBlend_5 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_BlendListByBool_4 FAnimNode_BlendListByBool
+---@field AnimGraphNode_BlendListByBool_3 FAnimNode_BlendListByBool
+---@field AnimGraphNode_SaveCachedPose_3 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_UseCachedPose_17 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_16 FAnimNode_UseCachedPose
+---@field AnimGraphNode_SaveCachedPose_2 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_UseCachedPose_15 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_14 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_13 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_12 FAnimNode_UseCachedPose
+---@field AnimGraphNode_SequencePlayer_1 FAnimNode_SequencePlayer
+---@field AnimGraphNode_BlendListByPointer_GSC FAnimNode_BlendListByPointer_GSC
+---@field AnimGraphNode_SequencePlayer FAnimNode_SequencePlayer
+---@field AnimGraphNode_StateResult_2 FAnimNode_StateResult
+---@field AnimGraphNode_StateMachine_1 FAnimNode_StateMachine
+---@field AnimGraphNode_BlendListByBool_2 FAnimNode_BlendListByBool
+---@field AnimGraphNode_IdentityPose_2 FAnimNode_RefPose
+---@field AnimGraphNode_ApplyAdditive_3 FAnimNode_ApplyAdditive
+---@field AnimGraphNode_Slot_1 FAnimNode_Slot
+---@field AnimGraphNode_LayeredBoneBlend_4 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_UseCachedPose_11 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_10 FAnimNode_UseCachedPose
+---@field AnimGraphNode_TransitionResult_1 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult FAnimNode_TransitionResult
+---@field AnimGraphNode_IdentityPose_1 FAnimNode_RefPose
+---@field AnimGraphNode_StateResult_1 FAnimNode_StateResult
+---@field AnimGraphNode_SequenceEvaluator FAnimNode_SequenceEvaluator
+---@field AnimGraphNode_StateResult FAnimNode_StateResult
+---@field AnimGraphNode_StateMachine FAnimNode_StateMachine
+---@field AnimGraphNode_BlendListByBool_1 FAnimNode_BlendListByBool
+---@field AnimGraphNode_IdentityPose FAnimNode_RefPose
+---@field AnimGraphNode_SaveCachedPose_1 FAnimNode_SaveCachedPose
+---@field AnimGraphNode_UseCachedPose_9 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_8 FAnimNode_UseCachedPose
+---@field AnimGraphNode_LayeredBoneBlend_3 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_ApplyAdditive_2 FAnimNode_ApplyAdditive
+---@field AnimGraphNode_LayeredBoneBlend_2 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_ApplyAdditive_1 FAnimNode_ApplyAdditive
+---@field AnimGraphNode_LayeredBoneBlend_1 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_ApplyAdditive FAnimNode_ApplyAdditive
+---@field AnimGraphNode_UseCachedPose_7 FAnimNode_UseCachedPose
+---@field AnimGraphNode_BlendListByBool FAnimNode_BlendListByBool
+---@field AnimGraphNode_SaveCachedPose FAnimNode_SaveCachedPose
+---@field AnimGraphNode_UseCachedPose_6 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_5 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_4 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_3 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_2 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose_1 FAnimNode_UseCachedPose
+---@field AnimGraphNode_UseCachedPose FAnimNode_UseCachedPose
+---@field AnimGraphNode_LayeredBoneBlend FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_Slot FAnimNode_Slot
+local UAnimBP_Player_Slots_C = {}
+
+---@param WeaponBase FPoseLink
+---@param WeaponAdditive FPoseLink
+---@param Moving FPoseLink
+---@param Look FPoseLink
+---@param UnderbarrelAdditive FPoseLink
+---@param AnimGraph FPoseLink
+function UAnimBP_Player_Slots_C:AnimGraph(WeaponBase, WeaponAdditive, Moving, Look, UnderbarrelAdditive, AnimGraph) end
+---@param EntryPoint int32
+function UAnimBP_Player_Slots_C:ExecuteUbergraph_AnimBP_Player_Slots(EntryPoint) end
+
+

@@ -1,0 +1,16 @@
+{
+   "Watches": [
+      {
+         "AcquisitionID": "/Script/Stalker2.ShootingWeaponComponent:Shoot",
+         "AcquisitionMethod": 0,
+         "PropertyName": " ",
+         "WatchType": 1
+      },
+      {
+         "AcquisitionID": "/Script/Stalker2.ShootingWeaponComponent:ShootWithOwnerOverride",
+         "AcquisitionMethod": 0,
+         "PropertyName": " ",
+         "WatchType": 1
+      }
+   ]
+}

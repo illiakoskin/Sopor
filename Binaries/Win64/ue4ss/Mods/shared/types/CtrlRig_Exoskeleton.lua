@@ -1,0 +1,154 @@
+---@meta
+
+---@class UCtrlRig_Exoskeleton_C : UControlRig
+local UCtrlRig_Exoskeleton_C = {}
+
+
+---@class URigVMMemory_Literal : URigVMMemoryStorage
+---@field RigVMModel___AimItem_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_Primary__Const FRigUnit_AimItem_Target
+---@field RigVMModel___RigUnit_GetTransform_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_Space__Const EBoneGetterSetterMode
+---@field RigVMModel___RigUnit_GetTransform_bInitial__Const boolean
+---@field RigVMModel___AimItem_Secondary__Const FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_Weight__Const float
+---@field RigVMModel___AimItem_DebugSettings__Const FRigUnit_AimBone_DebugSettings
+---@field RigVMModel___AimItem_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_1_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_1_Secondary__Const FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_1_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_2_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_1_1_Secondary__Const FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_3_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_Secondary__Const FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_1_2_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_4_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_1_1_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_5_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_6_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_7_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_8_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_1_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_9_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_1_1_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_10_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_2_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_11_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_2_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_12_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_1_2_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_13_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_1_1_2_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_14_Item__Const FRigElementKey
+---@field RigVMModel___AimItem_2_1_1_1_1_1_1_Item__Const FRigElementKey
+---@field RigVMModel___RigUnit_GetTransform_15_Item__Const FRigElementKey
+local URigVMMemory_Literal = {}
+
+
+
+---@class URigVMMemory_Work : URigVMMemoryStorage
+---@field ExecuteContext_ FControlRigExecuteContext
+---@field RigVMModel___RigUnit_GetTransform_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_1_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_1_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_2_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_2_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_1_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_3_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_3_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_4_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_4_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_2_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_1_2_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_2_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_2_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_5_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_5_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_1_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_1_1_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_1_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_1_1_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_6_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_6_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_7_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_7_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_8_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_8_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_9_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_9_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_1_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_10_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_10_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_1_1_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_1_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_11_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_11_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_2_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_2_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_2_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_2_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_12_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_12_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_2_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_2_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_2_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_2_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_13_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_13_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_2_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_1_2_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_2_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_2_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_14_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_14_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_2_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_1_1_2_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_2_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_2_SecondaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___RigUnit_GetTransform_15_Transform FTransform
+---@field RigVMModel___RigUnit_GetTransform_15_CachedIndex TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_1_1_Primary__IO FRigUnit_AimItem_Target
+---@field RigVMModel___AimItem_2_1_1_1_1_1_1_CachedItem TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_1_1_PrimaryCachedSpace TArray<FCachedRigElement>
+---@field RigVMModel___AimItem_2_1_1_1_1_1_1_SecondaryCachedSpace TArray<FCachedRigElement>
+local URigVMMemory_Work = {}
+
+
+
